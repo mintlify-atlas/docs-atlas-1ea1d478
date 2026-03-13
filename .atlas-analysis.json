@@ -1,0 +1,147 @@
+{
+  "projectType": "ai-ml",
+  "projectName": "Let's Threat Model",
+  "projectDescription": "An Agentic AI tool that helps teams identify and manage threats early in the development lifecycle by generating actionable threat models.",
+  "theme": "aspen",
+  "primaryColor": "#DC143C",
+  "lightColor": "#FF6B6B",
+  "darkColor": "#8B0000",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/threat-modeling",
+              "concepts/ai-agents",
+              "concepts/data-flow-analysis",
+              "concepts/stride-framework"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/yaml-config",
+              "configuration/environment-variables",
+              "configuration/asset-definition",
+              "configuration/repository-setup"
+            ]
+          },
+          {
+            "group": "Usage Guide",
+            "pages": [
+              "usage/cli-commands",
+              "usage/docker-deployment",
+              "usage/output-formats",
+              "usage/categorize-only-mode"
+            ]
+          },
+          {
+            "group": "Integration",
+            "pages": [
+              "integration/github-code-scanning",
+              "integration/ci-cd-pipelines",
+              "integration/ide-support"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/basic-example",
+              "examples/local-repository",
+              "examples/remote-repository",
+              "examples/juiceshop-case-study"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/contributing",
+              "development/architecture",
+              "development/debugging"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "AI Agents",
+            "pages": [
+              "api/agents/overview",
+              "api/agents/data-flow-agent",
+              "api/agents/threat-model-agent",
+              "api/agents/mitre-attack-agent",
+              "api/agents/categorization-agent",
+              "api/agents/review-agent"
+            ]
+          },
+          {
+            "group": "Data Models",
+            "pages": [
+              "api/models/threat-model",
+              "api/models/asset",
+              "api/models/repository",
+              "api/models/data-flow-report",
+              "api/models/threat",
+              "api/models/mitre-attack"
+            ]
+          },
+          {
+            "group": "Services",
+            "pages": [
+              "api/services/threat-model-services",
+              "api/services/report-generation",
+              "api/services/sarif-services"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-driven threat modeling using specialized agents",
+    "Automated repository analysis (GitHub or local)",
+    "Data flow report generation with Mermaid diagrams",
+    "STRIDE-based threat identification",
+    "MITRE ATT&CK technique mapping",
+    "Multiple output formats (Markdown, JSON, SARIF)",
+    "GitHub Code Scanning integration",
+    "Configurable LLM providers (OpenAI, Anthropic, Ollama)",
+    "Docker deployment support",
+    "File categorization and review workflows"
+  ],
+  "publicApiSurface": [
+    "main.py --config-file <path>",
+    "main.py --markdown-output <path>",
+    "main.py --json-output <path>",
+    "main.py --sarif-output <path>",
+    "DataFlowAgent",
+    "ThreatModelAgent",
+    "MitreAttackAgent",
+    "DiagramAgent",
+    "MergeDataFlowAgent",
+    "ThreatModel",
+    "Asset",
+    "Repository",
+    "DataFlowReport",
+    "Threat",
+    "Attack",
+    "ThreatModelConfig",
+    "generate_threat_model()",
+    "generate_data_flow()",
+    "generate_threats()",
+    "generate_mitre_attack()",
+    "generate_threat_model_report()"
+  ]
+}
